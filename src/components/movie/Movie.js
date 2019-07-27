@@ -6,6 +6,7 @@ export default class Movie extends Component {
     return (
       <div>
         <h2>{this.props.name}</h2>
+        <p>Liked By:</p>
         {(favoritedBy => {
           if (favoritedBy.length !== 0) {
             return (
