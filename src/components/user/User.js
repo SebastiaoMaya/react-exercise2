@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class User extends Component {
-  render() {
-    return <li>{this.props.userObject.name}</li>;
-  }
+export default function User(props) {
+  return <li>{props.userObject.name}</li>;
 }
